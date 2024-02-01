@@ -1,14 +1,15 @@
 import React from 'react';
 import { Image } from 'react-bootstrap';
 import PropTypes from 'prop-types'; // Correct import statement
+import "../Styles/homeCard.css";
 
 const Card = ({ ImageSrc, title, price }) => {
     return (
         <div className="Allcards">
             <div className="card1">
                 <Image src={ImageSrc} alt="banner" className="bannerimg" />
-                <p>{title}</p>
-                <p>{price}</p>
+                <p className='titletxt'>{title}</p>
+                <p className='priceitem'>{price}</p>
             </div>
         </div>
     );

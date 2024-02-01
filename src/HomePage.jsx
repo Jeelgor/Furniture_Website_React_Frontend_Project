@@ -6,16 +6,21 @@ import "./Styles/homepage.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
 import { faUser } from '@fortawesome/free-solid-svg-icons';
+// Example import in HomePage.js
 import bannerimg from './assets/bannerimg.png';
+import chair1 from './assets/chair1.png';
+import chair5 from './assets/chair5.png';
+import chair7 from './assets/chair7.png';
+import chair6 from './assets/chair6.png';
 import Home from "./component/Home";
 import Shop from "./component/Shop";
-import Cards from "./component/Cards";
+import Card from './component/Card';
+
 
 
 function HomePage() {
   return (
     <>
-
       <div className="navbar">
         <div>
           <Image src={logo} alt="Logo" className="logopng" />
@@ -63,12 +68,25 @@ function HomePage() {
         <Route path="/shop" element={<Shop />} />
       </Routes>
       {/* 
-         Making Card for homepage
+         Making Card for homepage using props file name Card and HomeCard.css
          */}
-         <div className="AllCards">
-               <Cards imageSrc={bannerimg} title="Chair" price="3000"/>
-         </div>
-   
+
+      <h3 style={{ marginLeft: 660, marginTop: 40 }}>Trending Product</h3>
+
+      <div className="AllCards">
+        <Card ImageSrc={chair1} title="Chair1" price="₹3000" />
+        <Card ImageSrc={chair5} title="Chair2" price="₹4000" />
+        <Card ImageSrc={chair7} title="Chair3" price="₹5000" />
+        <Card ImageSrc={chair6} title="Chair4" price="₹6000" />
+      </div>
+      <h3 style={{ marginLeft: 690, marginTop: 60 }}> Best Sales</h3>
+
+      <div className="BestSalespd">
+        <Card ImageSrc={chair1} title="Chair1" price="₹3000" />
+        <Card ImageSrc={chair5} title="Chair2" price="₹4000" />
+        <Card ImageSrc={chair7} title="Chair3" price="₹5000" />
+        <Card ImageSrc={chair6} title="Chair4" price="₹6000" />
+      </div>
     </>
   );
 }
