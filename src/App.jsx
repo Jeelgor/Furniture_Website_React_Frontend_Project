@@ -1,24 +1,14 @@
 // App.jsx
 import React from "react";
-import "./App.css";
+import HomePage from'./HomePage';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <>
-      <div className="Login-Box">
-        <h3>Sign In</h3>
-        <div className="AllTextField">
-          <div className="textfield">
-            <label>UserEmail</label>
-            <input type="text" placeholder="Email" />
-          </div>
-          <div className="textfield">
-            <label>UserPassword</label>
-            <input type="text" placeholder="Password" />
-          </div>
-          <button>Sign In</button>
-        </div>
-      </div>
+    {/* <LoginPage/> */}
+    {/* <Register/> */}
+    <HomePage/>
     </>
   );
 }
