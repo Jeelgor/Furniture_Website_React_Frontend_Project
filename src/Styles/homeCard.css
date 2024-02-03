@@ -1,5 +1,11 @@
+/* src/styles/tailwind.css */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
 .card1 {
-  margin-left: 110px;
+  margin-left: 130px;
   height: 300px;
   width: 230px;
   border: 2px solid black;

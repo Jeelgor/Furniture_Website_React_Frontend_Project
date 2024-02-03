@@ -1,15 +1,15 @@
-import {  Image, Container } from "react-bootstrap";
+import { Image, Container } from "react-bootstrap";
 
 
 import "./Styles/homepage.css";
 // Example import in HomePage.js
 import bannerimg from './assets/bannerimg.png';
-import chair1 from './assets/chair1.png';
-import chair5 from './assets/chair5.png';
-import chair7 from './assets/chair7.png';
-import chair6 from './assets/chair6.png';
+import chair1 from './assets/Chair/chair1.png';
+import chair5 from './assets/Chair/chair5.png';
+import chair7 from './assets/Chair/chair7.png';
+import chair6 from './assets/Chair/chair6.png';
+import sofa1 from './assets/Sofaimg/sofa1.png';
 import Card from './component/Card';
-
 
 
 function HomePage() {
@@ -26,19 +26,19 @@ function HomePage() {
             </div>
 
             <div className="imgsec">
-              <Image src={bannerimg} alt="banner" className="bannerimg" />
+              <Image src={bannerimg} alt="banner" className="imgsec" />
             </div>
 
           </Container>
 
         </section>
       </div>
-    
+
       {/* 
          Making Card for homepage using props file name Card and HomeCard.css
          */}
 
-      <h3 style={{ marginLeft: 660, marginTop: 40 }}>Trending Product</h3>
+      <h3 style={{ marginLeft: 660 }}>Trending Product</h3>
 
       <div className="AllCards">
         <Card ImageSrc={chair1} title="Chair1" price="₹3000" />
@@ -49,10 +49,10 @@ function HomePage() {
       <h3 style={{ marginLeft: 690, marginTop: 60 }}> Best Sales</h3>
 
       <div className="BestSalespd">
-        <Card ImageSrc={chair1} title="Chair1" price="₹3000" />
-        <Card ImageSrc={chair5} title="Chair2" price="₹4000" />
-        <Card ImageSrc={chair7} title="Chair3" price="₹5000" />
-        <Card ImageSrc={chair6} title="Chair4" price="₹6000" />
+        <Card ImageSrc={chair1} title="sofa1" price="₹3000" />
+        <Card ImageSrc={chair5} title="sofa2" price="₹4000" />
+        <Card ImageSrc={chair7} title="sofa3" price="₹5000" />
+        <Card ImageSrc={chair6} title="sofa4" price="₹6000" />
       </div>
     </>
   );

@@ -1,6 +1,12 @@
+/* src/styles/tailwind.css */
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
 
 .btop{
-  top: 22px;
+  position: relative;
+  bottom: 80px;
 }
 .bannersec {
   display: flex;
@@ -22,17 +28,14 @@
 }
 
 .imgsec {
-  display: inline;
   padding-bottom: 100px;
   margin-bottom: 33px;
+  height: 400px;
+  width: 400px;
 }
 
-.bannerimg {
-  max-width: 100%;
-  height: auto;
-}
+
 .clickb {
-  margin-right: 30px;
   margin: 22px;
   height: 40px;
   width: 120px;
