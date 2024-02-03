@@ -1,16 +1,23 @@
 import { Image, Container } from "react-bootstrap";
+import { NavLink } from 'react-router-dom';
 
 
 import "./Styles/homepage.css";
 // Example import in HomePage.js
-import bannerimg from './assets/bannerimg.png';
-import chair1 from './assets/Chair/chair1.png';
-import chair5 from './assets/Chair/chair5.png';
-import chair7 from './assets/Chair/chair7.png';
-import chair6 from './assets/Chair/chair6.png';
-import sofa1 from './assets/Sofaimg/sofa1.png';
-import Card from './component/Card';
-
+import bannerimg from "./assets/bannerimg.png";
+import chair1 from "./assets/Chair/chair1.png";
+import chair5 from "./assets/Chair/chair5.png";
+import chair7 from "./assets/Chair/chair7.png";
+import chair6 from "./assets/Chair/chair6.png";
+import sofa1 from "./assets/Sofaimg/sofa1.png";
+import sofa2 from "./assets/Sofaimg/sofa2.png";
+import sofa3 from "./assets/Sofaimg/sofa3.png";
+import sofa4 from "./assets/Sofaimg/sofa4.png";
+import StudyLogos from "./assets/Logo/StudyLogos.png";
+import SofaLogo from "./assets/Logo/SofaLogo.png";
+import ChairLogo from "./assets/Logo/ChairLogo.png";
+import Card from "./component/Card";
+import Footer from "./component/Footer";
 
 function HomePage() {
   return (
@@ -21,16 +28,17 @@ function HomePage() {
             <div className="headingtext">
               <p> Trending Product in 2024 </p>
               <h2>Make Your Interior More Minimalistic & Modern</h2>
-              <h5>Elevate your space with our stylish and comfortable furniture pieces</h5>
+              <h5>
+                Elevate your space with our stylish and comfortable furniture
+                pieces
+              </h5>
               <button className="clickb">Shop Now</button>
             </div>
 
             <div className="imgsec">
               <Image src={bannerimg} alt="banner" className="imgsec" />
             </div>
-
           </Container>
-
         </section>
       </div>
 
@@ -49,11 +57,54 @@ function HomePage() {
       <h3 style={{ marginLeft: 690, marginTop: 60 }}> Best Sales</h3>
 
       <div className="BestSalespd">
-        <Card ImageSrc={chair1} title="sofa1" price="₹3000" />
-        <Card ImageSrc={chair5} title="sofa2" price="₹4000" />
-        <Card ImageSrc={chair7} title="sofa3" price="₹5000" />
-        <Card ImageSrc={chair6} title="sofa4" price="₹6000" />
+        <Card ImageSrc={sofa1} title="sofa1" price="₹3000" />
+        <Card ImageSrc={sofa2} title="sofa2" price="₹4000" />
+        <Card ImageSrc={sofa3} title="sofa3" price="₹5000" />
+        <Card ImageSrc={sofa4} title="sofa4" price="₹6000" />
       </div>
+
+      <div className="flex">
+        <div className="textp">
+          <p className="textp">Our Products</p>
+        </div>
+      </div>
+      <div className="Al">
+        <NavLink to="/Studytable">
+          <div className="imgContainer">
+            <div className="imglogo">
+              <Image src={StudyLogos} alt="studylogo" className="imglogo" />
+            </div>
+            <div className="textHeading">
+              <p>Study Table</p>
+            </div>
+          </div>
+        </NavLink>
+
+        <NavLink to="/Sofapage">
+          <div className="imgContainer">
+            <div className="imglogo2">
+              <Image src={SofaLogo} alt="SofaLogo" className="imglogo2" />
+            </div>
+            <div className="textHeading">
+              <p>Sofa</p>
+            </div>
+          </div>
+        </NavLink>
+
+        <NavLink to="/ChairPage">
+          <div className="imgContainer">
+            <div className="imglogo3">
+              <Image src={ChairLogo} alt="ChairLogo" className="imglogo3" />
+            </div>
+            <div className="textHeading">
+              <p>Chair</p>
+            </div>
+          </div>
+        </NavLink>
+      </div>
+      <Footer/>
+
+
     </>
   );
 }

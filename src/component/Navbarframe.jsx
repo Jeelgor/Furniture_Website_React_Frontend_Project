@@ -1,11 +1,11 @@
-import React from 'react'
-import { NavLink } from 'react-router-dom';
+import React from "react";
+import { NavLink } from "react-router-dom";
 import { Image, Navbar } from "react-bootstrap";
-import logo from "../assets/logo.png"
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faShoppingCart } from '@fortawesome/free-solid-svg-icons';
-import { faUser } from '@fortawesome/free-solid-svg-icons';
-import "../Styles/Navbar.css"
+import logo from "../assets/logo.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faShoppingCart } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import "../Styles/Navbar.css";
 
 const Navbarf = () => {
   return (
@@ -18,24 +18,24 @@ const Navbarf = () => {
 
       <div>
         <Navbar className="nametext">
-          <NavLink to="/">
-            <div className='mr-8'>
-              <p className='  '>Home</p>
+          <NavLink to="/" style={{ color: 'black', textDecoration: 'none' }}>
+            <div className="mr-8">
+              <p className="">Home</p>
             </div>
           </NavLink>
 
           <div>
-            <NavLink to="/cart">
+            <NavLink to="/cart" style={{ color: 'black', textDecoration: 'none' }}>
               <p>Cart</p>
             </NavLink>
-
           </div>
         </Navbar>
       </div>
 
+
       <div className="icons">
         <NavLink to="/cart">
-          <div className="icons-faShoppingCart" >
+          <div className="icons-faShoppingCart">
             <FontAwesomeIcon icon={faShoppingCart} />
           </div>
         </NavLink>
@@ -46,6 +46,6 @@ const Navbarf = () => {
         </NavLink>
       </div>
     </div>
-  )
-}
+  );
+};
 export default Navbarf;
