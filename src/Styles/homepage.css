@@ -1,35 +1,6 @@
 
-.navbar {
-  display: flex;
-  flex-direction: row;
-  margin-bottom: 38px;
-  justify-content: space-between;
-  align-items: center;
-}
-.home {
-  margin: 22px;
-}
-
-/* homepage.css */
-.cart {
-  margin: 22px;
-}
-
-.logopng {
-  height: 100px;
-  width: 100px;
-  margin-bottom: 22px;
-}
-.icons {
-  width: 60px;
-  height: 40px;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 18px;
-  margin-right: 20px;
-}
 .btop{
-  top: 222px;
+  top: 22px;
 }
 .bannersec {
   display: flex;
