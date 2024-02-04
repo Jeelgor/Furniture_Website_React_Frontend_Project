@@ -29,7 +29,7 @@ const Footer = () => {
                         </NavLink>
                     </div>
                 </div>
-
+                             
                 <div className="t3">
                     <p className="font-bold">Useful Links</p>
                     <div className="textcol1">

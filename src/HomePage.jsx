@@ -1,9 +1,7 @@
 import { Image, Container } from "react-bootstrap";
-import { NavLink } from 'react-router-dom';
-
+import { NavLink } from "react-router-dom";
 
 import "./Styles/homepage.css";
-// Example import in HomePage.js
 import bannerimg from "./assets/bannerimg.png";
 import chair1 from "./assets/Chair/chair1.png";
 import chair5 from "./assets/Chair/chair5.png";
@@ -69,42 +67,40 @@ function HomePage() {
         </div>
       </div>
       <div className="Al">
-        <NavLink to="/Studytable">
+        <NavLink to="/Studytable" style={{ textDecoration: "none" }}>
           <div className="imgContainer">
             <div className="imglogo">
               <Image src={StudyLogos} alt="studylogo" className="imglogo" />
             </div>
             <div className="textHeading">
-              <p>Study Table</p>
+              <p className="text-black ">Study Table</p>
             </div>
           </div>
         </NavLink>
 
-        <NavLink to="/Sofapage">
+        <NavLink to="/Sofapage" style={{ textDecoration: "none" }}>
           <div className="imgContainer">
             <div className="imglogo2">
               <Image src={SofaLogo} alt="SofaLogo" className="imglogo2" />
             </div>
             <div className="textHeading">
-              <p>Sofa</p>
+              <p className="text-black no-underline">Sofa</p>
             </div>
           </div>
         </NavLink>
 
-        <NavLink to="/ChairPage">
+        <NavLink to="/ChairPage" style={{ textDecoration: "none" }}>
           <div className="imgContainer">
             <div className="imglogo3">
               <Image src={ChairLogo} alt="ChairLogo" className="imglogo3" />
             </div>
             <div className="textHeading">
-              <p>Chair</p>
+              <p className="text-black no-underline">Chair</p>
             </div>
           </div>
         </NavLink>
       </div>
-      <Footer/>
-
-
+      <Footer />
     </>
   );
 }

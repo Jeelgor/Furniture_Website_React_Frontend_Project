@@ -3,13 +3,12 @@
     justify-content: space-around;
     padding: 20px; 
     background-color: #071730;
-    /* height: 250px; */ /* Consider removing fixed height for better responsiveness */
+    margin-top: 62px;
   }
   
   .t1, .t2, .t3, .t4 {
     flex: 1;
     margin: 0 20px; 
-    /* margin-left: 120px; */ /* Consider removing this or adjusting based on your design needs */
     padding-top: 40px;
     color: white;
   }
@@ -19,13 +18,11 @@
     color: white;
   }
   
-  /* Update styles for NavLink elements */
   .t1 a, .t2 a, .t3 a, .t4 a {
     color: white;
     text-decoration: none;
   }
   
-  /* Remove the default blue color and underline */
   .t1 a:hover, .t2 a:hover, .t3 a:hover, .t4 a:hover {
     color: white;
     text-decoration: none;
