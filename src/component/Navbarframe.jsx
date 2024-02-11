@@ -11,7 +11,7 @@ const Navbarf = () => {
   return (
     <div className="navbar">
       <div>
-        <NavLink>
+        <NavLink to="/">
           <Image src={logo} alt="Logo" className="logopng" />
         </NavLink>
       </div>
@@ -31,8 +31,8 @@ const Navbarf = () => {
           </div>
         </Navbar>
       </div>
-
-
+            
+          
       <div className="icons">
         <NavLink to="/cart">
           <div className="icons-faShoppingCart">

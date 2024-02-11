@@ -21,17 +21,17 @@ const Studytable = () => {
       </div>
       {/* Card Section */}
       <div className="FirstThree">
-        <Card ImageSrc={Study1} title="Chair1" price="₹3000" />
-        <Card ImageSrc={Study2} title="Chair2" price="₹4000" />
-        <Card ImageSrc={Study3} title="Chair3" price="₹5000" />
-        <Card ImageSrc={Study4} title="Chair4" price="₹6000" />
+        <Card ImageSrc={Study1} title="StudyTable" price="₹3000" />
+        <Card ImageSrc={Study2} title="StudyTable" price="₹4000" />
+        <Card ImageSrc={Study3} title="StudyTable" price="₹5000" />
+        <Card ImageSrc={Study4} title="StudyTable" price="₹6000" />
 
       </div>
       <div className="SecondThree">
-        <Card ImageSrc={Study4} title="Chair4" price="₹6000" />
-        <Card ImageSrc={Study5} title="Chair4" price="₹6000" />
-        <Card ImageSrc={Study6} title="Chair4" price="₹6000" />
-        <Card ImageSrc={Study6} title="Chair4" price="₹6000" />
+        <Card ImageSrc={Study4} title="StudyTable" price="₹6000" />
+        <Card ImageSrc={Study5} title="StudyTable" price="₹6000" />
+        <Card ImageSrc={Study6} title="StudyTable" price="₹6000" />
+        <Card ImageSrc={Study6} title="StudyTable" price="₹6000" />
       </div>
       <Footer/>
     </>

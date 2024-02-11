@@ -11,6 +11,7 @@ import Sofa7 from "../assets/Sofaimg/Sofa7.png";
 import Sofa8 from "../assets/Sofaimg/Sofa8.png";
 
 import Footer from "../component/Footer";
+import { Link } from "react-router-dom";
 const SofaPage = () => {
   return (
     <>
@@ -24,7 +25,9 @@ const SofaPage = () => {
       </div>
       {/* Card Section */}
       <div className="FirstThree">
-        <Card ImageSrc={sofa1} title="Sofa" price="₹33000" />
+        <Link to="/AddToCart" className="card-link">
+          <Card ImageSrc={sofa1} title="Sofa" price="₹33000" />
+        </Link>
         <Card ImageSrc={sofa2} title="Sofa" price="₹44000" />
         <Card ImageSrc={sofa3} title="Sofa" price="₹55000" />
         <Card ImageSrc={sofa4} title="Sofa" price="₹66000" />
@@ -36,7 +39,7 @@ const SofaPage = () => {
         <Card ImageSrc={Sofa7} title="Sofa" price="₹12000" />
         <Card ImageSrc={Sofa8} title="Sofa" price="₹22000" />
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

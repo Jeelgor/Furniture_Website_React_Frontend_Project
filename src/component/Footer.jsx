@@ -18,13 +18,13 @@ const Footer = () => {
                 <div className="t2">
                     <p className="font-bold">Top Categories</p>
                     <div className="textcol1">
-                        <NavLink>
+                        <NavLink to="/SofaPage">
                             <p>Sofa</p>
                         </NavLink>
-                        <NavLink>
+                        <NavLink to="Studytable">
                             <p>Study Table</p>
                         </NavLink>
-                        <NavLink>
+                        <NavLink to="ChairPage">
                             <p>Chair</p>
                         </NavLink>
                     </div>
