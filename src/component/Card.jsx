@@ -8,7 +8,7 @@ const Card = ({ ImageSrc, title, price }) => {
         <div className="Allcards">
             <div className="card1">
                 <Image src={ImageSrc} alt="banner" className="bannerimg" />
-                <p className='titletxt'>{title}</p>
+                <p className='titletxt' style={{textDecoration:'none'}}>{title}</p>
                 <p className='priceitem'>{price}</p>
             </div>
         </div>

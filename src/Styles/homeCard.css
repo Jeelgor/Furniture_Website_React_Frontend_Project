@@ -38,6 +38,9 @@
   font-size: 22px;
   margin-left: 22px;
 }
+.titletxt ,.priceitem {
+  color: black;
+}
 .priceitem {
   font-size: 18px;
   margin-left: 22px;
