@@ -12,9 +12,11 @@ import Sofa8 from "../assets/Sofaimg/Sofa8.png";
 
 import Footer from "../component/Footer";
 import { Link } from "react-router-dom";
+import Navbarf from "../component/Navbarframe";
 const SofaPage = () => {
   return (
     <>
+    <Navbarf/>
       <div className="st">
         <p className="st">Study Table</p>
       </div>

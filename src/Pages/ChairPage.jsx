@@ -11,9 +11,11 @@ import chair7 from "../assets/Chair/chair7.png";
 import chair8 from "../assets/Chair/chair8.png";
 
 import Footer from "../component/Footer";
+import Navbarf from "../component/Navbarframe";
 const ChairPage = () => {
   return (
     <>
+    <Navbarf/>
       <div className="st">
         <p className="st">Study Table</p>
       </div>

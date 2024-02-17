@@ -4,7 +4,7 @@ import sofa7 from '../assets/Sofaimg/sofa7.png';
 
 const Sofa7 = () => {
     return (
-        <>
+        <>z
             <ProductCard
                 name="Single Attractive Sofa"
                 price={12000}

@@ -2,6 +2,7 @@
     display: flex;
     margin-bottom: 38px;
     justify-content: space-between;
+    overflow: hidden;
   }
   .home {
     margin: 22px;

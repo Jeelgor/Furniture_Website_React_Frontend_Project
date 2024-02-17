@@ -5,6 +5,7 @@ import React, { useState } from "react";
 import Footer from "./Footer";
 import toast from "react-hot-toast";
 import { useCart } from "../context/CartContext";
+import Navbarf from "./Navbarframe";
 
 const ProductCard = ({ name, price, description, image }) => {
   const { addToCart } = useCart();
@@ -34,6 +35,7 @@ const ProductCard = ({ name, price, description, image }) => {
 
   return (
     <>
+    <Navbarf/>
       <div className="Outerclass2">
         <div className="container2">
           <div className="left-side">

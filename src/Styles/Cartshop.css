@@ -25,3 +25,11 @@ th {
   text-align: center;
   margin-top: 22px;
 }
+.btncheck {
+  margin-left: 722px;
+  margin-top: 322px;
+  padding: 6px;
+  width: 122px;
+  background-color: #0a1d56; 
+  color: white;
+}

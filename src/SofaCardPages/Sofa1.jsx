@@ -1,6 +1,7 @@
 import ProductCard from '../component/ProductCart';
 import sofa1 from '../assets/Sofaimg/sofa1.png';
 
+
 const Sofa1 = () => {
   
   return (

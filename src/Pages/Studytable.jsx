@@ -8,9 +8,11 @@ import Study4 from "../assets/StudyTable/Study4.png";
 import Study5 from "../assets/StudyTable/Study5.png";
 import Study6 from "../assets/StudyTable/Study6.png";
 import Footer from "../component/Footer";
+import Navbarf from "../component/Navbarframe";
 const Studytable = () => {
   return (
     <>
+    <Navbarf/>
       <div className="st">
         <p className="st">Study Table</p>
       </div>

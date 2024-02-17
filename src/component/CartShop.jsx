@@ -1,13 +1,18 @@
 // CartPage.js
-import React from 'react';
-import { useCart } from '../context/CartContext';
-import '../Styles/CartShop.css';
+import React from "react";
+import { useCart } from "../context/CartContext";
+import "../Styles/CartShop.css";
+import { Link } from "react-router-dom";
+import Navbarf from "./Navbarframe";
 
 const CartPage = () => {
   const { cart, removeFromCart } = useCart();
 
   // Calculate total amount
-  const totalAmount = cart.reduce((total, item) => total + item.price * item.quantity, 0);
+  const totalAmount = cart.reduce(
+    (total, item) => total + item.price * item.quantity,
+    0
+  );
 
   // Remove item from cart
   const removeItem = (index) => {
@@ -16,6 +21,8 @@ const CartPage = () => {
 
   return (
     <div>
+      <Navbarf />
+
       <h1>Shopping Cart</h1>
       <table>
         <thead className="tex1">
@@ -37,7 +44,11 @@ const CartPage = () => {
               <td>
                 <button
                   onClick={() => removeItem(index)}
-                  style={{ color: 'blue', border: '2px solid black', backgroundColor: 'skyblue' }}
+                  style={{
+                    color: "blue",
+                    border: "2px solid black",
+                    backgroundColor: "skyblue",
+                  }}
                 >
                   Remove
                 </button>
@@ -50,6 +61,10 @@ const CartPage = () => {
       <div className="totalAmount">
         <p>Total Amount: ${totalAmount.toFixed(2)}</p>
       </div>
+
+      <Link to="/CheckOutPage">
+        <button className="btncheck">Check Out</button>
+      </Link>
     </div>
   );
 };
