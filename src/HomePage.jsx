@@ -41,7 +41,7 @@ function HomePage() {
         </Container>
       </div>
 
-      <h3 className="text-center mt-4">Trending Product</h3>
+      <h3 className="text-center mt-4 ml-20">Trending Product</h3>
       <div className="AllCards flex justify-center">
         <Card ImageSrc={chair1} title="Chair1" price="₹3000" />
         <Card ImageSrc={chair5} title="Chair2" price="₹4000" />
@@ -49,7 +49,7 @@ function HomePage() {
         <Card ImageSrc={chair6} title="Chair4" price="₹6000" />
       </div>
 
-      <h3 className="text-center mt-8">Best Sales</h3>
+      <h3 className="text-center mt-8 ml-20">Best Sales</h3>
       <div className=" flex justify-center">
         <Card ImageSrc={sofa1} title="sofa1" price="₹3000" />
         <Card ImageSrc={sofa2} title="sofa2" price="₹4000" />
@@ -57,14 +57,17 @@ function HomePage() {
         <Card ImageSrc={sofa4} title="sofa4" price="₹6000" />
       </div>
 
-      <div className="flex mt-8 justify-center">
+      <div className="flex mt-12 justify-center ml-20">
         <div className="textp">
           <p className="textp text-2xl font-bold">Our Products</p>
         </div>
       </div>
 
       <div className="flex mt-4 justify-center space-x-8 justify-evenly">
-        <NavLink to="/Studytable" className="imgContainer no-underline transform transition-transform duration-300 ease-in-out hover:scale-105">
+        <NavLink
+          to="/Studytable"
+          className="imgContainer no-underline transform transition-transform duration-300 ease-in-out hover:scale-105"
+        >
           <div>
             <Image
               src={StudyLogos}
@@ -77,7 +80,10 @@ function HomePage() {
           </div>
         </NavLink>
 
-        <NavLink to="/Sofapage" className="imgContainer no-underline transform transition-transform duration-300 ease-in-out hover:scale-105">
+        <NavLink
+          to="/Sofapage"
+          className="imgContainer no-underline transform transition-transform duration-300 ease-in-out hover:scale-105"
+        >
           <div>
             <Image
               src={SofaLogo}
@@ -90,7 +96,10 @@ function HomePage() {
           </div>
         </NavLink>
 
-        <NavLink to="/ChairPage" className="imgContainer no-underline transform transition-transform duration-300 ease-in-out hover:scale-105">
+        <NavLink
+          to="/ChairPage"
+          className="imgContainer no-underline transform transition-transform duration-300 ease-in-out hover:scale-105"
+        >
           <div>
             <Image
               src={ChairLogo}
@@ -103,7 +112,6 @@ function HomePage() {
           </div>
         </NavLink>
       </div>
-
 
       <Footer />
     </>

@@ -1,5 +1,4 @@
 import React from "react";
-import "../Styles/OurProduct.css";
 import Card from "../component/Card";
 import Study1 from "../assets/StudyTable/Study1.png";
 import Study2 from "../assets/StudyTable/Study2.png";
@@ -13,22 +12,22 @@ const Studytable = () => {
   return (
     <>
     <Navbarf/>
-      <div className="st">
-        <p className="mt-8 ml-[360px]">Study Table</p>
-      </div>
+    <p className="mt-0 ml-[730px] font-bold text-2xl">Chose Your  Sofa</p>
       <div className="pt">
-        <p className="ml-[140px]">
-          Upgrade your study space with our stylish and practical study table
+        <p className="ml-[580px] font-semibold">
+        Upgrade your study space with our stylish and practical study table
+
         </p>
       </div>
-      <div className="FirstThree">
+       
+      <div className="flex">
         <Card ImageSrc={Study1} title="StudyTable" price="₹3000" />
         <Card ImageSrc={Study2} title="StudyTable" price="₹4000" />
         <Card ImageSrc={Study3} title="StudyTable" price="₹5000" />
         <Card ImageSrc={Study4} title="StudyTable" price="₹6000" />
 
       </div>
-      <div className="SecondThree">
+      <div className="flex">
         <Card ImageSrc={Study4} title="StudyTable" price="₹6000" />
         <Card ImageSrc={Study5} title="StudyTable" price="₹6000" />
         <Card ImageSrc={Study6} title="StudyTable" price="₹6000" />

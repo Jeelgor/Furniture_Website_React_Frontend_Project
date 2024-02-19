@@ -1,5 +1,4 @@
 import React from "react";
-import "../Styles/OurProduct.css";
 import Card from "../component/Card";
 import chair1 from "../assets/Chair/chair1.png";
 import chair2 from "../assets/Chair/chair2.png";
@@ -16,8 +15,8 @@ const ChairPage = () => {
   return (
     <>
       <Navbarf />
-        <p className="mt-8 ml-[710px] font-bold text-2xl">Study Table</p>
-        <p className="ml-[540px] font-semibold ">
+        <p className="mt-0 ml-[750px] font-bold text-2xl">Study Table</p>
+        <p className="ml-[580px] font-semibold ">
           Upgrade your study space with our stylish and practical Morden Chair
         </p>
       {/* Card Section */}

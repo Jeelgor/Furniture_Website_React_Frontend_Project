@@ -16,11 +16,9 @@ const SofaPage = () => {
   return (
     <>
       <Navbarf />
-      <div className="st">
-        <p className="mt-8 ml-[340px]">Chose Your  Sofa</p>
-      </div>
+        <p className="mt-0 ml-[730px] font-bold text-2xl">Chose Your  Sofa</p>
       <div className="pt">
-        <p className="ml-[140px]">
+        <p className="ml-[490px] font-semibold">
           Elevate your living space with our luxurious sofas, where comfort meets contemporary design
         </p>
       </div>

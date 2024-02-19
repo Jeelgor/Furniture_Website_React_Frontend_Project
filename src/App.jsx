@@ -25,6 +25,7 @@ import Chair5 from "./ChairPage/Chair5";
 import Chair8 from "./ChairPage/Chair8";
 import Chair7 from "./ChairPage/Chair7";
 import Chair6 from "./ChairPage/Chair6";
+import ProductDetailPage from "./component/ProductDetailPage";
 
 
 function App() {
@@ -58,6 +59,7 @@ function App() {
         <Route path="/Chair7" element={<Chair7 />} />
         <Route path="/Chair8" element={<Chair8 />} />
         <Route path="/CheckOutPage" element={<CheckOutPage/>} />
+        <Route path="/products/:productId" component={ProductDetailPage} />
       </Routes>
     </>
   );
