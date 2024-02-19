@@ -1,6 +1,6 @@
 .navbar {
     display: flex;
-    margin-bottom: 38px;
+    /* margin-bottom: 38px; */
     justify-content: space-between;
     overflow: hidden;
   }
@@ -14,9 +14,9 @@
   }
   
   .logopng {
-    height: 100px;
+    /* height: 100px; */
     width: 100px;
-    margin-bottom: 22px;
+    /* margin-bottom: 22px; */
   }
   .icons {
     width: 60px;

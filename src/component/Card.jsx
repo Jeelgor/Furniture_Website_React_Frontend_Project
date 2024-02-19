@@ -5,11 +5,11 @@ import "../Styles/homeCard.css";
 
 const Card = ({ ImageSrc, title, price }) => {
     return (
-        <div className="Allcards">
-            <div className="card1">
-                <Image src={ImageSrc} alt="banner" className="bannerimg" />
-                <p className='titletxt' style={{textDecoration:'none'}}>{title}</p>
-                <p className='priceitem'>{price}</p>
+        <div className="flex justify-center">
+            <div className="justify-center items-center h-[300px] w-[230px] shadow-[0_4px_8px_rgba(0,0,0,0.1)] transition-transform duration-[0.2s] ease-[ease-in-out] bg-neutral-100 cursor-pointer ml-[130px] mt-[30px] rounded-[20px] border-2 border-solid border-[black] hover:scale-105">
+                <Image src={ImageSrc} alt="banner" className="flex h-[190px] w-[190px] relative justify-center" />
+                <p className='text-2xl ml-[22px] to-black ' style={{textDecoration:'none'}}>{title}</p>
+                <p className='text-2xl ml-[22px] to-black'>{price}</p>
             </div>
         </div>
     );

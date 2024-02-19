@@ -1,5 +1,4 @@
 import React from "react";
-import "../Styles/OurProduct.css";
 import Card from "../component/Card";
 import sofa1 from "../assets/Sofaimg/sofa1.png";
 import sofa2 from "../assets/Sofaimg/sofa2.png";
@@ -16,41 +15,41 @@ import Navbarf from "../component/Navbarframe";
 const SofaPage = () => {
   return (
     <>
-    <Navbarf/>
+      <Navbarf />
       <div className="st">
-        <p className="st">Study Table</p>
+        <p className="mt-8 ml-[340px]">Chose Your  Sofa</p>
       </div>
       <div className="pt">
-        <p className="pt">
-          Upgrade your study space with our stylish and practical study table
+        <p className="ml-[140px]">
+          Elevate your living space with our luxurious sofas, where comfort meets contemporary design
         </p>
       </div>
       {/* Card Section */}
-      <div className="FirstThree" style={{textDecoration:'none'}}>
-        <Link to="/Sofa1" className="card-link">
+      <div className="flex " style={{ textDecoration: 'none' }}>
+        <Link to="/Sofa1" className="text-black">
           <Card ImageSrc={sofa1} title="Sofa" price="₹33000" />
         </Link>
-        <Link to="/Sofa2" className="card-link">
+        <Link to="/Sofa2" className="text-black">
           <Card ImageSrc={sofa2} title="Sofa" price="₹44000" />
         </Link>
-        <Link to="/Sofa3" className="card-link">
+        <Link to="/Sofa3" className="text-black">
           <Card ImageSrc={sofa3} title="Sofa" price="₹55000" />
         </Link >
-        <Link to="/Sofa4" className="card-link">
+        <Link to="/Sofa4" className="text-black">
           <Card ImageSrc={sofa4} title="Sofa" price="₹66000" />
         </Link>
       </div>
-      <div className="SecondThree">
-        <Link to="/Sofa5" className="card-link">
+      <div className="flex">
+        <Link to="/Sofa5" className="text-black">
           <Card ImageSrc={sofa5} title="Sofa" price="₹62000" />
         </Link>
-        <Link to="/Sofa6" className="card-link">
+        <Link to="/Sofa6" className="text-black">
           <Card ImageSrc={sofa6} title="Sofa" price="₹78000" />
         </Link>
-        <Link to="/Sofa7" className="card-link">
+        <Link to="/Sofa7" className="text-black">
           <Card ImageSrc={Sofa7} title="Sofa" price="₹12000" />
         </Link>
-        <Link to="/Sofa8" className="card-link">
+        <Link to="/Sofa8" className="text-black">
           <Card ImageSrc={Sofa8} title="Sofa" price="₹22000" />
         </Link>
       </div>

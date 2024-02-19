@@ -14,14 +14,13 @@ const Studytable = () => {
     <>
     <Navbarf/>
       <div className="st">
-        <p className="st">Study Table</p>
+        <p className="mt-8 ml-[360px]">Study Table</p>
       </div>
       <div className="pt">
-        <p className="pt">
+        <p className="ml-[140px]">
           Upgrade your study space with our stylish and practical study table
         </p>
       </div>
-      {/* Card Section */}
       <div className="FirstThree">
         <Card ImageSrc={Study1} title="StudyTable" price="₹3000" />
         <Card ImageSrc={Study2} title="StudyTable" price="₹4000" />
