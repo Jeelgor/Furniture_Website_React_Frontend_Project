@@ -17,6 +17,10 @@ import Sofa6 from "./SofaCardPages/Sofa6";
 import Sofa7 from "./SofaCardPages/Sofa7";
 import Sofa8 from "./SofaCardPages/Sofa8";
 import CheckOutPage from "./Pages/CheckOutPage";
+import Chair1 from "./ChairPage/Chair1";
+import Chair2 from "./ChairPage/Chair2";
+import Chair3 from "./ChairPage/Chair3";
+import Chair4 from "./ChairPage/Chair4";
 
 
 function App() {
@@ -30,7 +34,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/cart" element={<CartShop />} />
-        <Route path="/ChaiUserPage" element={<ChairPage />} />
+        <Route path="/ChairPage" element={<ChairPage />} />
         <Route path="/SofaPage" element={<Sofapage />} />
         <Route path="/StudyTable" element={<Studytable />} />
         <Route path="/Sofa1" element={<Sofa1 />} />
@@ -41,6 +45,10 @@ function App() {
         <Route path="/Sofa6" element={<Sofa6 />} />
         <Route path="/Sofa7" element={<Sofa7 />} />
         <Route path="/Sofa8" element={<Sofa8 />} />
+        <Route path="/Chair1" element={<Chair1 />} />
+        <Route path="/Chair2" element={<Chair2 />} />
+        <Route path="/Chair3" element={<Chair3 />} />
+        <Route path="/Chair4" element={<Chair4 />} />
         <Route path="/CheckOutPage" element={<CheckOutPage/>} />
       </Routes>
     </>

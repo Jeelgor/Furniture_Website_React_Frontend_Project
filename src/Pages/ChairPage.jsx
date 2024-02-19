@@ -12,10 +12,11 @@ import chair8 from "../assets/Chair/chair8.png";
 
 import Footer from "../component/Footer";
 import Navbarf from "../component/Navbarframe";
+import { Link } from "react-router-dom";
 const ChairPage = () => {
   return (
     <>
-    <Navbarf/>
+      <Navbarf />
       <div className="st">
         <p className="st">Study Table</p>
       </div>
@@ -26,10 +27,20 @@ const ChairPage = () => {
       </div>
       {/* Card Section */}
       <div className="FirstThree">
-        <Card ImageSrc={chair1} title="Chair" price="₹3000" />
-        <Card ImageSrc={chair2} title="Chair" price="₹4000" />
-        <Card ImageSrc={chair3} title="Chair" price="₹5000" />
-        <Card ImageSrc={chair4} title="Chair" price="₹6000" />
+        <Link to="/Chair1">
+          <Card ImageSrc={chair1} title="Chair" price="₹3000" />
+        </Link >
+        <Link to="/Chair2">
+          <Card ImageSrc={chair2} title="Chair" price="₹4000" />
+        </Link>
+        <Link to="/Chair3">
+          <Card ImageSrc={chair1} title="Chair" price="₹3000" />
+        </Link>
+        <Link to="/Chair4">
+          <Card ImageSrc={chair4} title="Chair" price="₹6000" />
+        </Link>
+
+
 
       </div>
       <div className="SecondThree">
@@ -38,7 +49,7 @@ const ChairPage = () => {
         <Card ImageSrc={chair7} title="Chair" price="₹9000" />
         <Card ImageSrc={chair8} title="Chair" price="₹10000" />
       </div>
-      <Footer/>
+      <Footer />
     </>
   );
 };

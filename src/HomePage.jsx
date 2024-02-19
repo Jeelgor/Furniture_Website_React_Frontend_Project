@@ -20,15 +20,12 @@ import Navbarf from "./component/Navbarframe";
 
 function HomePage() {
   return (
-
     <>
-     <Navbarf/>
-
+      <Navbarf />
       <div className="btop">
         <section className="bannersec">
           <Container className="banner">
             <div className="headingtext">
-
               <p> Trending Product in 2024 </p>
               <h2>Make Your Interior More Minimalistic & Modern</h2>
               <h5>

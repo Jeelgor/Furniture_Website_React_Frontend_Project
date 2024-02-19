@@ -12,9 +12,21 @@ const ProductCard = ({ name, price, description, image }) => {
 
   const [quantity, setQuantity] = useState(1);
 
+  // const handleIncrement = () => {
+  //   setQuantity(quantity + 1);
+  //  if (setQuantity==5) {
+  //    setQuantity()
+  //  }
+  //   toast.success("Quantity Updated");
+  // };
+
   const handleIncrement = () => {
-    setQuantity(quantity + 1);
-    toast.success("Quantity Updated");
+    if (quantity < 7) {
+      setQuantity(quantity + 1);
+      toast.success("Quantity Updated");
+    } else {
+      toast.error("Maximum quantity reached (7)");
+    }
   };
 
   const handleDecrement = () => {
