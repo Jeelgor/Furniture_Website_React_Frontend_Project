@@ -44,10 +44,22 @@ const ChairPage = () => {
 
       </div>
       <div className="SecondThree">
-        <Card ImageSrc={chair5} title="Chair" price="₹7000" />
-        <Card ImageSrc={chair6} title="Chair" price="₹8000" />
-        <Card ImageSrc={chair7} title="Chair" price="₹9000" />
-        <Card ImageSrc={chair8} title="Chair" price="₹10000" />
+        <Link to="/Chair5">
+          <Card ImageSrc={chair5} title="Chair" price="₹7000" />
+
+        </Link>
+        <Link to="/Chair6">
+          <Card ImageSrc={chair6} title="Chair" price="₹8000" />
+
+        </Link>
+        <Link to="/Chair7">
+          <Card ImageSrc={chair7} title="Chair" price="₹9000" />
+
+        </Link>
+        <Link to="/Chair8">
+          <Card ImageSrc={chair8} title="Chair" price="₹10000" />
+
+        </Link>
       </div>
       <Footer />
     </>

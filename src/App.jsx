@@ -21,6 +21,10 @@ import Chair1 from "./ChairPage/Chair1";
 import Chair2 from "./ChairPage/Chair2";
 import Chair3 from "./ChairPage/Chair3";
 import Chair4 from "./ChairPage/Chair4";
+import Chair5 from "./ChairPage/Chair5";
+import Chair8 from "./ChairPage/Chair8";
+import Chair7 from "./ChairPage/Chair7";
+import Chair6 from "./ChairPage/Chair6";
 
 
 function App() {
@@ -49,6 +53,10 @@ function App() {
         <Route path="/Chair2" element={<Chair2 />} />
         <Route path="/Chair3" element={<Chair3 />} />
         <Route path="/Chair4" element={<Chair4 />} />
+        <Route path="/Chair5" element={<Chair5 />} />
+        <Route path="/Chair6" element={<Chair6 />} />
+        <Route path="/Chair7" element={<Chair7 />} />
+        <Route path="/Chair8" element={<Chair8 />} />
         <Route path="/CheckOutPage" element={<CheckOutPage/>} />
       </Routes>
     </>

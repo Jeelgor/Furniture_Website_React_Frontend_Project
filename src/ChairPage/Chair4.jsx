@@ -1,11 +1,15 @@
 import React from 'react';
-import chair1 from "../assets/Chair/chair1.png";
 import ProductCard from '../component/ProductCart';
+import chair3 from '../assets/Chair/chair3.png';
 
 export const Chair4 = () => {
     return (
-        <ProductCard image={chair1} name="Chair" price="12000" />
-
+        <ProductCard
+        name="Single Attractive Sofa"
+        price={2999}
+        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        image={chair3}
+      />
     )
 }
 export default Chair4;
