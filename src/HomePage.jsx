@@ -32,9 +32,10 @@ function HomePage() {
               Elevate your space with our stylish and comfortable furniture
               pieces
             </h5>
-            <button className="bg-blue-800 text-white mr-[680px] mt-4 ">
+            <button className="bg-blue-800 text-white mr-[650px] mt-4 px-4 py-2 rounded ">
               Shop Now
             </button>
+
           </div>
           <div className="imgsec">
             <Image src={bannerimg} alt="banner" className="w-96 h-96" />
@@ -43,7 +44,7 @@ function HomePage() {
       </div>
 
       <h3 className="text-center mt-4 ml-20">Trending Product</h3>
-      <div className="AllCards flex justify-center">
+      <div className="AllCards flex justify-center mr-[85px]">
         <Card ImageSrc={chair1} title="Chair1" price="₹3000" />
         <Card ImageSrc={chair5} title="Chair2" price="₹4000" />
         <Card ImageSrc={chair7} title="Chair3" price="₹5000" />
@@ -51,7 +52,7 @@ function HomePage() {
       </div>
 
       <h3 className="text-center mt-8 ml-20">Best Sales</h3>
-      <div className=" flex justify-center">
+      <div className=" flex justify-center mr-[85px]">
         <Card ImageSrc={sofa1} title="sofa1" price="₹3000" />
         <Card ImageSrc={sofa2} title="sofa2" price="₹4000" />
         <Card ImageSrc={sofa3} title="sofa3" price="₹5000" />
