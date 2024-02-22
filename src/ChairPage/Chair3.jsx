@@ -1,19 +1,16 @@
+import React from 'react';
 import ProductCard from '../component/ProductCart';
-import sofa1 from '../assets/Sofaimg/sofa1.png';
+import chair2 from '../assets/Chair/chair2.png';
 
-
-const Sofa1 = () => {
-  
-  return (
-    <>
-      <ProductCard
+export const Chair3 = () => {
+    return (
+        <ProductCard
         name="Single Attractive Sofa"
         price={2999}
         description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
-        image={sofa1}
+        image={chair2}
       />
-    </>
-  );
-};
 
-export default Sofa1;
+    )
+}
+export default Chair3;
