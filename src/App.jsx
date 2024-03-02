@@ -6,7 +6,7 @@ import React from "react";
 // // import Home from "./component/Home";
 // import CartShop from "./component/CartShop";
 // import ChairPage from "./Pages/ChairPage";
-// import Sofapage from "./Pages/Sofapage";
+import Sofapage from "./Pages/Sofapage";
 // import Studytable from "./Pages/Studytable";
 // import Sofa1 from "./SofaCardPages/Sofa1";
 // import Sofa2 from "./SofaCardPages/Sofa2";
@@ -49,6 +49,7 @@ function App() {
 <Routes>
  <Route path="/" element={<SignUp/>}/>
  <Route path="/Login" element={<LoginPage/>}/>
+ <Route path="/SofaPage" element={<Sofapage/>}/>
 </Routes>
       {/* <Navbarf /> */}
       {/* <UserDetailPage/> */}
