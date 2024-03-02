@@ -20,31 +20,31 @@ const Studytable = () => {
         </p>
       </div>
 
-      <div className="flex">
-        <Link to="/studytbl1">
+      <div className="flex ">
+        <Link to="/Study1" className="text-black">
           <Card ImageSrc={Study1} title="StudyTable" price="₹3000" />
         </Link>
-        <Link>
+        <Link to="/Study2" className="text-black">
           <Card ImageSrc={Study2} title="StudyTable" price="₹4000" />
         </Link>
-        <Link>
+        <Link to="/Study3"  className="text-black">
           <Card ImageSrc={Study3} title="StudyTable" price="₹5000" />
         </Link>
-        <Link>
+        <Link  to="/Study4" className="text-black">
           <Card ImageSrc={Study4} title="StudyTable" price="₹6000" />
         </Link>
       </div>
       <div className="flex">
-        <Link>
+        <Link to="/Study5"  className="text-black">
           <Card ImageSrc={Study4} title="StudyTable" price="₹6000" />
         </Link>
-        <Link>
+        <Link  to="/Study6" className="text-black">
           <Card ImageSrc={Study5} title="StudyTable" price="₹6000" />
         </Link>
-        <Link>
+        <Link  to="/Study7" className="text-black">
           <Card ImageSrc={Study6} title="StudyTable" price="₹6000" />
         </Link>
-        <Link>
+        <Link to="/Study8" className="text-black">
           <Card ImageSrc={Study6} title="StudyTable" price="₹6000" />
         </Link>
       </div>

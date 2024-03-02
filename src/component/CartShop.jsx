@@ -34,9 +34,9 @@ const CartPage = () => {
         <tbody>
           {cart.map((item, index) => (
             <tr key={index} className="text-center">
-              <td className="p-2">{/* Display your item image here */}</td>
+              <td className="p-2"><img src={item.image} /></td>
               <td className="p-2">{item.name}</td>
-              <td className="p-2">${(item.price * item.quantity).toFixed(2)}</td>
+              <td className="p-2">₹{(item.price * item.quantity).toFixed(2)}</td>
               <td className="p-2">{item.quantity}</td>
               <td className="p-2">
                 <button
@@ -52,7 +52,7 @@ const CartPage = () => {
       </table>
 
       <div className="text-center">
-        <p className="text-xl font-bold">Total Amount: ${totalAmount.toFixed(2)}</p>
+        <p className="text-xl font-bold">Total Amount: ₹{totalAmount.toFixed(2)}</p>
         <Link to="/CheckOutPage">
           <button className="mt-4 px-8 py-3 bg-blue-900 text-white rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue active:bg-blue-800">
             Check Out

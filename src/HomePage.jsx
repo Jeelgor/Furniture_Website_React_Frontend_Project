@@ -1,6 +1,6 @@
 import React from "react";
 import { Image, Container } from "react-bootstrap";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Card from "./component/Card";
 import Footer from "./component/Footer";
 import Navbarf from "./component/Navbarframe";
@@ -32,9 +32,11 @@ function HomePage() {
               Elevate your space with our stylish and comfortable furniture
               pieces
             </h5>
-            <button className="bg-blue-800 text-white mr-[650px] mt-4 px-4 py-2 rounded ">
+          <Link to="/StudyTable">
+          <button className="bg-blue-800 text-white mr-[650px] mt-4 px-4 py-2 rounded ">
               Shop Now
             </button>
+          </Link>
 
           </div>
           <div className="imgsec">
