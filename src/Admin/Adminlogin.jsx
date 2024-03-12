@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import axios from 'axios';
 import toast from 'react-hot-toast';
 
 const LoginPage = () => {
@@ -12,54 +11,35 @@ const LoginPage = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-  
-    // Email validation
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  
-    // Password validation (at least 8 characters, one uppercase, one lowercase, one digit)
-    const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
-  
+
+    // Define the allowed admin credentials
+    const allowedAdmins = [
+      { email: 'Jeel10@gmail.com', password: 'Jeel@123' },
+      { email: 'Aditya07@gmail.com.com', password: 'Aditya@123' }
+    ];
+
     // Clear previous errors
     setEmailError('');
     setPasswordError('');
-  
-    // Email validation
-    if (!email) {
-      setEmailError('Please enter your email address');
-    } else if (!emailRegex.test(email)) {
-      setEmailError('Please enter a valid email address');
-    }
-  
-    // Password strength validation
-    if (!password) {
-      setPasswordError('Please enter a password');
-    } else if (!passwordRegex.test(password)) {
-      setPasswordError('Password must be at least 8 characters, contain one uppercase letter, one lowercase letter, and one digit');
-    }
-  
-    // Check if any errors exist
-    if (emailError || passwordError) {
+
+    // Email and password validation
+    if (!email || !password) {
+      setEmailError('Please enter both email and password');
       return;
     }
-  
-    // Your axios post request
-    axios.post('http://localhost:3011/login', { email, password })
-      .then(response => {
-        const result = response.data;
-  
-        if (result) {
-          // Redirect to HomePage only if login is successful
-          navigate('/HomePage');
-          toast.success("Login Successfully");
-        } else {
-          // Display an error message if login fails
-          setEmailError('Incorrect email or password');
-        }
-      })
-      .catch(err => console.log(err));
+
+    // Check if the entered credentials match any allowed admin
+    const isAdmin = allowedAdmins.some(admin => admin.email === email && admin.password === password);
+
+    if (isAdmin) {
+      // Redirect to Adminnav if admin credentials are valid
+      navigate('/Adminnav');
+      toast.success("Welcome Admin");
+    } else {
+      // Display an error 
+      setEmailError('Invalid email or password');
+    }
   };
-  
-  
 
   return (
     <div className='bg-blue-700 h-screen flex items-center justify-center'>
@@ -89,10 +69,8 @@ const LoginPage = () => {
           <Link to="/SignUp">
             <button className='text-blue-900'>don't have Account Sign Up Here</button>
           </Link>
-          <br></br>
-          <Link to="/AdminLogin">
-            <button className='text-blue-900'>Admin Login</button>
-          </Link>
+
+
         </form>
       </div>
     </div>

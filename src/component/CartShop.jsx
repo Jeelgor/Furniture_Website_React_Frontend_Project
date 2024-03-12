@@ -10,38 +10,59 @@ const CartPage = () => {
   const [name, Setname] = useState("");
   const [price, Setprice] = useState("");
   const [quantity, Setquantity] = useState("");
+  const [imgpath, Setimgpath] = useState("");
   const totalAmount = cart.reduce((total, item) => total + item.price * item.quantity, 0);
 
   const removeItem = (index) => {
     removeFromCart(index);
   };
+  // const handleCheckOut = async (e) => {
+  //   try {
+  //     e.preventDefault();
+
+  //     // Assuming you want to get the last item in the cart
+  //     const lastCartItem = cart[cart.length - 1];
+
+  //     await axios.post('http://localhost:3011/checkout', {
+  //       name: lastCartItem.name,
+  //       price: lastCartItem.price,
+  //       quantity: lastCartItem.quantity,
+  //       imgpath: lastCartItem.image, // Assuming 'image' is the property in your cart item containing the image path
+  //     });
+
+  //     localStorage.clear();
+  //   } catch (error) {
+  //     console.error('Error during checkout:', error);
+  //   }
+  // };
 
   const handleCheckOut = async (e) => {
     try {
       e.preventDefault();
-  
+
       // Assuming you want to get the last item in the cart
       const lastCartItem = cart[cart.length - 1];
-  
+
       axios.post('http://localhost:3011/checkout', {
         name: lastCartItem.name,
         price: lastCartItem.price,
-        quantity: lastCartItem.quantity
+        quantity: lastCartItem.quantity,
+        imgpath: lastCartItem.image
       })
-      .then(result => {
-        console.log(result);
-      })
-      .catch(err => console.log(err));
+        .then(result => {
+          console.log(result);
+        })
+        .catch(err => console.log(err));
       localStorage.clear()
-  
+
     } catch (error) {
       console.error('Error during checkout:', error);
     }
   };
-  
+
   return (
     <div className="px-8 py-4">
-      <Navbarf /> 
+      <Navbarf />
 
       <h1 className="text-3xl text-center mb-8">Shopping Cart</h1>
 
@@ -58,7 +79,7 @@ const CartPage = () => {
         <tbody>
           {cart.map((item, index) => (
             <tr key={index} className="text-center">
-              <td className="p-2"><img src={item.image}/></td>
+              <td className="p-2"><img src={item.image} /></td>
               <td className="p-2">{item.name} </td>
               <td className="p-2">₹{(item.price * item.quantity).toFixed(2)}</td>
               <td className="p-2">{item.quantity} </td>
@@ -78,13 +99,13 @@ const CartPage = () => {
       <div className="text-center">
         <p className="text-xl font-bold">Total Amount: ₹{totalAmount.toFixed(2)}</p>
         <Link to="/CheckOutPage">
-        <button
-          onClick={handleCheckOut}
-          className="mt-4 px-8 py-3 bg-blue-900 text-white rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue active:bg-blue-800"
-        >
-          Check Out
-        </button>
-      </Link>
+          <button
+            onClick={handleCheckOut}
+            className="mt-4 px-8 py-3 bg-blue-900 text-white rounded hover:bg-blue-700 focus:outline-none focus:shadow-outline-blue active:bg-blue-800"
+          >
+            Check Out
+          </button>
+        </Link>
       </div>
     </div>
   );

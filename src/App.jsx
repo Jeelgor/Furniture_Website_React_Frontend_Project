@@ -38,6 +38,10 @@ import SignUp from "./Authentication/SignUp";
 // import { Route, Routes } from "react-router-dom";
 import LoginPage from "./Authentication/LoginPage";
 import UserContext from "./component/UserContext";
+import LoginData from "./Admin/LoginData";
+import Adminlogin from "./Admin/Adminlogin";
+import OrdersData from "./Admin/OrdersData";
+import Adminnav from "./Admin/Adminnav";
 
 
 function App() {
@@ -62,6 +66,11 @@ function App() {
         <Route path="/SofaPage" element={<Sofapage />} />
         <Route path="/HomePage" element={<HomePage />} />
         <Route path="/cart" element={<CartShop />} />
+        <Route path="/Adminlogin" element={<Adminlogin />} />
+        <Route path="/Adminnav" element={<Adminnav />} />
+        <Route path="/OrdersData" element={<OrdersData/>} />
+        <Route path="/LoginData" element={<LoginData />} />
+        <Route path="/SignUp" element={<SignUp />} />
         <Route path="/ChairPage" element={<ChairPage />} />
         <Route path="/SofaPage" element={<Sofapage />} />
         <Route path="/StudyTable" element={<Studytable />} />

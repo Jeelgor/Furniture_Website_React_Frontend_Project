@@ -13,10 +13,10 @@ const SignUp = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
 
-        // Email validation regex
+        // Email validation
         const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-        // Password validation regex (at least 8 characters, one uppercase, one lowercase, one digit)
+        // Password validation (at least 8 characters, one uppercase, one lowercase, one digit)
         const passwordRegex = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d).{8,}$/;
 
         // Clear previous errors
@@ -90,7 +90,10 @@ const SignUp = () => {
                     </div>
                     <button className='w-full bg-blue-700 text-white py-2 rounded-md'>Sign Up</button>
                     <Link to="/Login">
-                        <button className='text-white'>Already Have Account? Login</button>
+                        <button className='text-blue-900'>Already Have Account? Login</button>
+                    </Link><br></br>
+                    <Link to="/AdminLogin">
+                        <button className='text-blue-900'>Admin Login</button>
                     </Link>
                 </form>
             </div>

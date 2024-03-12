@@ -29,16 +29,16 @@ const SofaPage = () => {
         </p>
       {/* Card Section */}
       <div className="flex">
-        <Link to="/Sofa1" className="text-black">
+        <Link to="/Sofa1" className="text-black hover:text-black text-decoration-none">
           <Card ImageSrc={sofa1} title="Sofa" price="₹33000" />
         </Link >
-        <Link to="/Sofa2" className="text-black">
+        <Link to="/Sofa2" className="text-black hover:text-black text-decoration-none">
           <Card ImageSrc={sofa2} title="Sofa" price="₹44000" />
         </Link>
-        <Link to="/Sofa3" className="text-black">
+        <Link to="/Sofa3" className="text-black hover:text-black text-decoration-none">
           <Card ImageSrc={sofa3} title="Sofa" price="₹30000" />
         </Link>
-        <Link to="/Sofa4" className="text-black">
+        <Link to="/Sofa4" className="text-black hover:text-black text-decoration-none">
           <Card ImageSrc={sofa4} title="Sofa" price="₹66000" />
         </Link>
 
@@ -46,19 +46,19 @@ const SofaPage = () => {
 
       </div>
       <div className="flex">
-        <Link to="/Sofa5" className="text-black">
+        <Link to="/Sofa5" className="text-black hover:text-black text-decoration-none">
           <Card ImageSrc={sofa5} title="Sofa" price="₹7000" />
 
         </Link>
-        <Link to="/Sofa6" className="text-black"> 
+        <Link to="/Sofa6" className="text-black hover:text-black text-decoration-none"> 
           <Card ImageSrc={sofa6} title="Sofa" price="₹8000" />
 
         </Link>
-        <Link to="/Sofa7" className="text-black">
+        <Link to="/Sofa7" className="text-black hover:text-black text-decoration-none">
           <Card ImageSrc={Sofa7} title="Sofa" price="₹9000" />
 
         </Link>
-        <Link to="/Sofa8" className="text-black">
+        <Link to="/Sofa8" className="text-black hover:text-black text-decoration-none">
           <Card ImageSrc={Sofa8} title="Sofa" price="₹10000" />
 
         </Link>

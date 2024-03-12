@@ -43,6 +43,7 @@ const Navbarf = () => {
               <p className="m-4  transition-transform duration-[0.2s] ease-[ease-in-out] cursor-pointer hover:underline scale-105">Cart</p>
             </NavLink>
           </div>
+         
         </Navbar>
       </div>
 
