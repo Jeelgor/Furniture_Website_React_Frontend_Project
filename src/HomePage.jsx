@@ -16,10 +16,12 @@ import sofa4 from "./assets/Sofaimg/sofa4.png";
 import StudyLogos from "./assets/Logo/StudyLogos.png";
 import SofaLogo from "./assets/Logo/SofaLogo.png";
 import ChairLogo from "./assets/Logo/ChairLogo.png";
+import "./Styles/homepage.css";
 
 function HomePage() {
   return (
     <>
+    
       <Navbarf />
       <div className="bg-blue-200 mb-12">
         <Container className="flex items-center justify-between h-350 w-98.8vw">
@@ -45,7 +47,7 @@ function HomePage() {
         </Container>
       </div>
 
-      <h3 className="text-center mt-4 ml-20">Trending Product</h3>
+      <h3 className="text-3xl text-center font-bold">Trending Product</h3>
       <div className="AllCards flex justify-center mr-[85px]">
         <Card ImageSrc={chair1} title="Chair1" price="₹3000" />
         <Card ImageSrc={chair5} title="Chair2" price="₹4000" />
@@ -53,7 +55,7 @@ function HomePage() {
         <Card ImageSrc={chair6} title="Chair4" price="₹6000" />
       </div>
 
-      <h3 className="text-center mt-8 ml-20">Best Sales</h3>
+      <h3 className="text-3xl text-center font-bold mt-[40px]">Best Sales</h3>
       <div className=" flex justify-center mr-[85px]">
         <Card ImageSrc={sofa1} title="sofa1" price="₹3000" />
         <Card ImageSrc={sofa2} title="sofa2" price="₹4000" />
@@ -62,9 +64,7 @@ function HomePage() {
       </div>
 
       <div className="flex mt-12 justify-center ml-20">
-        <div className="textp">
-          <p className="textp text-2xl font-bold">Our Products</p>
-        </div>
+          <p className="text-3xl font-bold text-center">Our Products</p>
       </div>
 
       <div className="flex mt-4 justify-center space-x-8 justify-evenly">

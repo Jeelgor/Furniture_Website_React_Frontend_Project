@@ -23,23 +23,23 @@ const SofaPage = () => {
   return (
     <>
       <Navbarf />
-        <p className="mt-0 ml-[750px] font-bold text-2xl">Study Table</p>
+        <p className="mt-0 ml-[750px] font-bold text-2xl">Sofa</p>
         <p className="ml-[580px] font-semibold ">
-          Upgrade your study space with our stylish and practical Morden Sofa
+          Upgrade your Home space with our stylish and practical Morden Sofa
         </p>
       {/* Card Section */}
       <div className="flex">
         <Link to="/Sofa1" className="text-black">
-          <Card ImageSrc={sofa1} title="Sofa" price="₹3000" />
+          <Card ImageSrc={sofa1} title="Sofa" price="₹33000" />
         </Link >
         <Link to="/Sofa2" className="text-black">
-          <Card ImageSrc={sofa2} title="Sofa" price="₹4000" />
+          <Card ImageSrc={sofa2} title="Sofa" price="₹44000" />
         </Link>
         <Link to="/Sofa3" className="text-black">
-          <Card ImageSrc={sofa3} title="Sofa" price="₹3000" />
+          <Card ImageSrc={sofa3} title="Sofa" price="₹30000" />
         </Link>
         <Link to="/Sofa4" className="text-black">
-          <Card ImageSrc={sofa4} title="Sofa" price="₹6000" />
+          <Card ImageSrc={sofa4} title="Sofa" price="₹66000" />
         </Link>
 
 

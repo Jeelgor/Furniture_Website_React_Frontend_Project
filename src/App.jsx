@@ -1,60 +1,66 @@
 // App.jsx
-import React from "react";
-// import HomePage from './HomePage';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-// import { Routes, Route } from "react-router-dom";
-// // import Home from "./component/Home";
-// import CartShop from "./component/CartShop";
-// import ChairPage from "./Pages/ChairPage";
+import React, { useState } from "react";
+import HomePage from './HomePage';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Routes, Route } from "react-router-dom";
+// import Home from "./component/Home";
+import CartShop from "./component/CartShop";
+import ChairPage from "./Pages/ChairPage";
 import Sofapage from "./Pages/Sofapage";
-// import Studytable from "./Pages/Studytable";
-// import Sofa1 from "./SofaCardPages/Sofa1";
-// import Sofa2 from "./SofaCardPages/Sofa2";
-// import Sofa3 from "./SofaCardPages/Sofa3";
-// import Sofa4 from "./SofaCardPages/Sofa4";
-// import Sofa5 from "./SofaCardPages/Sofa5";
-// import Sofa6 from "./SofaCardPages/Sofa6";
-// import Sofa7 from "./SofaCardPages/Sofa7";
-// import Sofa8 from "./SofaCardPages/Sofa8";
-// import Chair1 from "./ChairPage/Chair1";
-// import Chair2 from "./ChairPage/Chair2";
-// import Chair3 from "./ChairPage/Chair3";
-// import Chair4 from "./ChairPage/Chair4";
-// import Chair5 from "./ChairPage/Chair5";
-// import Chair8 from "./ChairPage/Chair8";
-// import Chair7 from "./ChairPage/Chair7";
-// import Chair6 from "./ChairPage/Chair6";
-// // import SofaDetailPage from "./component/SofaDetailPage";
-// import Study1 from "./StudyTablePage/Study1";
-// // import Study8 from "./StudyTablePage/Study8";
-// // import Study7 from "./StudyTablePage/Study7";
-// import Study6 from "./StudyTablePage/Study6";
-// import Study5 from "./StudyTablePage/Study5";
-// import Study4 from "./StudyTablePage/Study4";
-// import Study3 from "./StudyTablePage/Study3";
-// import Study2 from "./StudyTablePage/Study2";
-// import ChairDetail from "./Pages/ChairDetail";
-import { LoginPage } from "./Authentication/LoginPage";
+import Studytable from "./Pages/Studytable";
+import Sofa1 from "./SofaCardPages/Sofa1";
+import Sofa2 from "./SofaCardPages/Sofa2";
+import Sofa3 from "./SofaCardPages/Sofa3";
+import Sofa4 from "./SofaCardPages/Sofa4";
+import Sofa5 from "./SofaCardPages/Sofa5";
+import Sofa6 from "./SofaCardPages/Sofa6";
+import Sofa7 from "./SofaCardPages/Sofa7";
+import Sofa8 from "./SofaCardPages/Sofa8";
+import Chair1 from "./ChairPage/Chair1";
+import Chair2 from "./ChairPage/Chair2";
+import Chair3 from "./ChairPage/Chair3";
+import Chair4 from "./ChairPage/Chair4";
+import Chair5 from "./ChairPage/Chair5";
+import Chair8 from "./ChairPage/Chair8";
+import Chair7 from "./ChairPage/Chair7";
+import Chair6 from "./ChairPage/Chair6";
+// import SofaDetailPage from "./component/SofaDetailPage";
+import Study1 from "./StudyTablePage/Study1";
+// import Study8 from "./StudyTablePage/Study8";
+// import Study7 from "./StudyTablePage/Study7";
+import Study6 from "./StudyTablePage/Study6";
+import Study5 from "./StudyTablePage/Study5";
+import Study4 from "./StudyTablePage/Study4";
+import Study3 from "./StudyTablePage/Study3";
+import Study2 from "./StudyTablePage/Study2";
+import ChairDetail from "./Pages/ChairDetail";
 import SignUp from "./Authentication/SignUp";
-import { Route, Routes } from "react-router-dom";
+// import { Route, Routes } from "react-router-dom";
+import LoginPage from "./Authentication/LoginPage";
+import UserContext from "./component/UserContext";
 
 
 function App() {
+  const [user, setUser] = useState(null);
   return (
     <>
       {/* <HomePage /> */}
       {/* <Home/> */}
-{/* <LoginPage/> */}
-{/* <SignUp/> */}
-<Routes>
- <Route path="/" element={<SignUp/>}/>
- <Route path="/Login" element={<LoginPage/>}/>
- <Route path="/SofaPage" element={<Sofapage/>}/>
-</Routes>
+      {/* <LoginPage/> */}
+      {/* <SignUp/> */}
+      {/* <Routes>
+        <Route path="/" element={<SignUp />} />
+        <Route path="/login" element={<LoginPage />} />
+        <Route path="/SofaPage" element={<Sofapage />} />
+      </Routes> */}
       {/* <Navbarf /> */}
       {/* <UserDetailPage/> */}
-      {/* <Routes>
-        <Route path="/" element={<HomePage />} />
+      <UserContext.Provider value={{ user, setUser }}>
+      <Routes>
+        <Route path="/" element={<SignUp />} />
+        <Route path="/login" element={<LoginPage setUser={setUser}/>} />
+        <Route path="/SofaPage" element={<Sofapage />} />
+        <Route path="/HomePage" element={<HomePage />} />
         <Route path="/cart" element={<CartShop />} />
         <Route path="/ChairPage" element={<ChairPage />} />
         <Route path="/SofaPage" element={<Sofapage />} />
@@ -76,16 +82,17 @@ function App() {
         <Route path="/Chair7" element={<Chair7 />} />
         <Route path="/Chair8" element={<Chair8 />} />
 
-        <Route path="/Study1" element={<Study1/>} />
-        <Route path="/Study2" element={<Study2/>} />
-        <Route path="/Study3" element={<Study3/>} />
-        <Route path="/Study4" element={<Study4/>} />
-        <Route path="/Study5" element={<Study5/>} />
-        <Route path="/Study6" element={<Study6/>} /> */}
-        {/* <Route path="/Study7" element={<Study7/>} />
-        <Route path="/Study8" element={<Study8/>} /> */}
-       {/* <Route path="/chair/:id" component={ChairDetail} /> */}
-      {/* </Routes> */}
+        <Route path="/Study1" element={<Study1 />} />
+        <Route path="/Study2" element={<Study2 />} />
+        <Route path="/Study3" element={<Study3 />} />
+        <Route path="/Study4" element={<Study4 />} />
+        <Route path="/Study5" element={<Study5 />} />
+        <Route path="/Study6" element={<Study6 />} />
+        {/* <Route path="/Study7" element={<Study7 />} />
+        <Route path="/Study8" element={<Study8 />} /> */}
+        <Route path="/chair/:id" component={ChairDetail} />
+      </Routes>
+      </UserContext.Provider>
     </>
   );
 }

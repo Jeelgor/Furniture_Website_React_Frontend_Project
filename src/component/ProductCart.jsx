@@ -46,16 +46,16 @@ const ProductCard = ({ name, price, description, image }) => {
               <Image
                 src={image}
                 alt={`${name} Logo`}
-                className="h-1/2 w-3/10"
+                className="h-[15vw] w-[60vw] "
               />
             </div>
           </div>
           <div className="right-side">
-            <h2>{name}</h2>
-            <p>Description: {description}</p>
-            <div className="price">
+            <h2 className="ml-[120px] text-3xl font-bold">{name}</h2>
+            <p className="ml-[110px] mt-[20px] font-medium ">Description: {description}</p>
+            <div className="price ml-[230px]">
               <div className="PRICEwIthCurrency">
-                <p className="text-2xl">
+                <p className="text-2xl  mt-[40px]">
                   Price: {calculateTotalPrice().toFixed(2)}{" "}
                 </p>
               </div>

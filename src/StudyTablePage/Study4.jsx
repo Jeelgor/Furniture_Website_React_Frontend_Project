@@ -5,9 +5,10 @@ import study4 from "../assets/StudyTable/Study4.png"
     return (
         <>
           <ProductCard
-            name="Single Attractive Sofa"
-            price={2999}
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            name="Study Table"
+            price={6000}
+            description="
+            Introducing the ultimate study companion – our meticulously designed study tables cater to the needs of the modern scholar, combining functionality with a touch of contemporary aesthetics. Crafted with precision and tailored for optimal productivity, our study tables redefine the study experience."
             image={study4}
           />
         </>

@@ -36,16 +36,16 @@ const Studytable = () => {
       </div>
       <div className="flex">
         <Link to="/Study5"  className="text-black">
-          <Card ImageSrc={Study4} title="StudyTable" price="₹6000" />
+          <Card ImageSrc={Study4} title="StudyTable" price="₹7000" />
         </Link>
         <Link  to="/Study6" className="text-black">
-          <Card ImageSrc={Study5} title="StudyTable" price="₹6000" />
+          <Card ImageSrc={Study5} title="StudyTable" price="₹8000" />
         </Link>
         <Link  to="/Study7" className="text-black">
-          <Card ImageSrc={Study6} title="StudyTable" price="₹6000" />
+          <Card ImageSrc={Study6} title="StudyTable" price="₹9000" />
         </Link>
         <Link to="/Study8" className="text-black">
-          <Card ImageSrc={Study6} title="StudyTable" price="₹6000" />
+          <Card ImageSrc={Study6} title="StudyTable" price="₹10000" />
         </Link>
       </div>
       <Footer />
