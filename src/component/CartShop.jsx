@@ -1,7 +1,7 @@
 // CartPage.js
 import React, { useEffect, useState } from "react";
 import { useCart } from "../context/CartContext";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import Navbarf from "./Navbarframe";
 import axios from "axios";
 
@@ -11,6 +11,7 @@ const CartPage = () => {
   const [price, Setprice] = useState("");
   const [quantity, Setquantity] = useState("");
   const [imgpath, Setimgpath] = useState("");
+  const navigate = useNavigate();
   const totalAmount = cart.reduce((total, item) => total + item.price * item.quantity, 0);
 
   const removeItem = (index) => {
@@ -51,6 +52,8 @@ const CartPage = () => {
       })
         .then(result => {
           console.log(result);
+          navigate('/HomePage')
+          localStorage.clear()
         })
         .catch(err => console.log(err));
       localStorage.clear()

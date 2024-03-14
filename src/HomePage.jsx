@@ -22,9 +22,9 @@ function HomePage() {
   return (
     <>
     
-      <Navbarf />
+      <Navbarf /> 
       <div className="bg-blue-200 mb-12">
-        <Container className="flex items-center justify-between h-350 w-98.8vw">
+        <Container className="flex items-center justify-between h-350 w-[100vw]">
           <div className="headingtext p-4 text-center">
             <p className="text-blue-800 pr-[600px]">Trending Product in 2024</p>
             <h2 className="text-3xl font-bold pr-[100px]">

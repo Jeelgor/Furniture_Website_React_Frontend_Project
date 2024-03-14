@@ -15,7 +15,7 @@ const LoginPage = () => {
     // Define the allowed admin credentials
     const allowedAdmins = [
       { email: 'Jeel10@gmail.com', password: 'Jeel@123' },
-      { email: 'Aditya07@gmail.com.com', password: 'Aditya@123' }
+      { email: 'Aditya07@gmail.com', password: 'Aditya@123' }
     ];
 
     // Clear previous errors

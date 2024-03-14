@@ -1,18 +1,18 @@
-
-
-import React, { useEffect, useState } from "react";
-import { NavLink,useNavigate } from "react-router-dom"; // Import useHistory
+import React, { useContext, useEffect, useState } from "react";
+import { NavLink, useNavigate } from "react-router-dom";
 import { Image, Navbar } from "react-bootstrap";
 import logo from "../assets/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart, faUser } from "@fortawesome/free-solid-svg-icons";
 import UserContext from "./UserContext";
-import { useContext } from "react";
+import axios from "axios";
 
 const Navbarf = () => {
   const [showDropdown, setShowDropdown] = useState(false);
-  const navigate=useNavigate();
+  const [userEmail, setUserEmail] = useState("");
+  const navigate = useNavigate();
   const { user } = useContext(UserContext);
+
   const handleDropdownToggle = () => {
     setShowDropdown(!showDropdown);
   };
@@ -23,7 +23,14 @@ const Navbarf = () => {
     console.log("Logout clicked");
   };
 
+  useEffect(() => {
+    // Assuming user context has user information including email
+    if (user && user.email) {
+      setUserEmail(user.email);
+    }
+  }, [user]);
   
+
   return (
     <div className="flex justify-between overflow-hidden">
       <div>
@@ -43,7 +50,11 @@ const Navbarf = () => {
               <p className="m-4  transition-transform duration-[0.2s] ease-[ease-in-out] cursor-pointer hover:underline scale-105">Cart</p>
             </NavLink>
           </div>
-         
+          <div>
+            <NavLink to="/AddProduct" style={{ color: 'black', textDecoration: 'none' }}>
+              <p className="m-4  transition-transform duration-[0.2s] ease-[ease-in-out] cursor-pointer hover:underline scale-105">Add Product</p>
+            </NavLink>
+          </div>
         </Navbar>
       </div>
 
@@ -54,11 +65,11 @@ const Navbarf = () => {
           </div>
           {showDropdown && (
             <div className="absolute right-0 mt-2 bg-white border rounded-md shadow-md p-2">
-            <p className="mb-2 text-gray-600">{user ? user.email : ''}</p>
-            <button onClick={handleLogout} className="bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-600">
-              Logout
-            </button>
-          </div>
+              <p className="mb-2 text-gray-600">{userEmail}</p>
+              <button onClick={handleLogout} className="bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-600">
+                Logout
+              </button>
+            </div>
           )}
         </div>
 

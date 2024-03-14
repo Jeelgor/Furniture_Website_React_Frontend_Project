@@ -27,7 +27,7 @@ const OrdersData = () => {
         <>
             <div className="text-3xl ml-[46vw]">OrdersData</div>
             <div className="container mx-auto p-4">
-                {/* Display registered user data */}
+           {/* Display Product data */}
                 <ul className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                     {product.map((product) => (
                         <li key={product._id} className="bg-white p-4 rounded-md shadow-md">
@@ -35,7 +35,7 @@ const OrdersData = () => {
                             <p className="text-lg font-semibold mb-2">Name: {product.name}</p>
                             <p className="text-gray-600">Qty: {product.quantity}</p>
                             <p className="text-gray-600">Price: {product.price}</p>
-                            {/* Add other fields as needed */}
+                         
                             <div className="mt-4 space-x-2">
                                 <button
                                     onClick={() => handleDeleteProduct(product._id)}

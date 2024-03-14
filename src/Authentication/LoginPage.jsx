@@ -66,7 +66,7 @@ const LoginPage = () => {
       <div className='ml-[40px] w-[600px] border-2 bg-white p-8 rounded-md'>
         <h2 className='text-3xl font-bold text-black mb-6'>Sign In</h2>
         <form onSubmit={handleSubmit}>
-
+ 
           <div className="mb-4">
             <label className='block text-lg text-black'>Email</label>
             <input

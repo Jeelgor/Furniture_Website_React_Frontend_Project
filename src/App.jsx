@@ -42,6 +42,7 @@ import LoginData from "./Admin/LoginData";
 import Adminlogin from "./Admin/Adminlogin";
 import OrdersData from "./Admin/OrdersData";
 import Adminnav from "./Admin/Adminnav";
+import Addproduct from "./Admin/AddProduct";
 
 
 function App() {
@@ -60,47 +61,49 @@ function App() {
       {/* <Navbarf /> */}
       {/* <UserDetailPage/> */}
       <UserContext.Provider value={{ user, setUser }}>
-      <Routes>
-        <Route path="/" element={<SignUp />} />
-        <Route path="/login" element={<LoginPage setUser={setUser}/>} />
-        <Route path="/SofaPage" element={<Sofapage />} />
-        <Route path="/HomePage" element={<HomePage />} />
-        <Route path="/cart" element={<CartShop />} />
-        <Route path="/Adminlogin" element={<Adminlogin />} />
-        <Route path="/Adminnav" element={<Adminnav />} />
-        <Route path="/OrdersData" element={<OrdersData/>} />
-        <Route path="/LoginData" element={<LoginData />} />
-        <Route path="/SignUp" element={<SignUp />} />
-        <Route path="/ChairPage" element={<ChairPage />} />
-        <Route path="/SofaPage" element={<Sofapage />} />
-        <Route path="/StudyTable" element={<Studytable />} />
-        <Route path="/Sofa1" element={<Sofa1 />} />
-        <Route path="/Sofa2" element={<Sofa2 />} />
-        <Route path="/Sofa3" element={<Sofa3 />} />
-        <Route path="/Sofa4" element={<Sofa4 />} />
-        <Route path="/Sofa5" element={<Sofa5 />} />
-        <Route path="/Sofa6" element={<Sofa6 />} />
-        <Route path="/Sofa7" element={<Sofa7 />} />
-        <Route path="/Sofa8" element={<Sofa8 />} />
-        <Route path="/Chair1" element={<Chair1 />} />
-        <Route path="/Chair2" element={<Chair2 />} />
-        <Route path="/Chair3" element={<Chair3 />} />
-        <Route path="/Chair4" element={<Chair4 />} />
-        <Route path="/Chair5" element={<Chair5 />} />
-        <Route path="/Chair6" element={<Chair6 />} />
-        <Route path="/Chair7" element={<Chair7 />} />
-        <Route path="/Chair8" element={<Chair8 />} />
+        <Routes>
+          <Route path="/" element={<SignUp />} />
+          <Route path="/Addproduct" element={<Addproduct />} />
 
-        <Route path="/Study1" element={<Study1 />} />
-        <Route path="/Study2" element={<Study2 />} />
-        <Route path="/Study3" element={<Study3 />} />
-        <Route path="/Study4" element={<Study4 />} />
-        <Route path="/Study5" element={<Study5 />} />
-        <Route path="/Study6" element={<Study6 />} />
-        {/* <Route path="/Study7" element={<Study7 />} />
+          <Route path="/login" element={<LoginPage setUser={setUser} />} />
+          <Route path="/SofaPage" element={<Sofapage />} />
+          <Route path="/HomePage" element={<HomePage />} />
+          <Route path="/cart" element={<CartShop />} />
+          <Route path="/Adminlogin" element={<Adminlogin />} />
+          <Route path="/Adminnav" element={<Adminnav />} />
+          <Route path="/OrdersData" element={<OrdersData />} />
+          <Route path="/LoginData" element={<LoginData />} />
+          <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/ChairPage" element={<ChairPage />} />
+          <Route path="/SofaPage" element={<Sofapage />} />
+          <Route path="/StudyTable" element={<Studytable />} />
+          <Route path="/Sofa1" element={<Sofa1 />} />
+          <Route path="/Sofa2" element={<Sofa2 />} />
+          <Route path="/Sofa3" element={<Sofa3 />} />
+          <Route path="/Sofa4" element={<Sofa4 />} />
+          <Route path="/Sofa5" element={<Sofa5 />} />
+          <Route path="/Sofa6" element={<Sofa6 />} />
+          <Route path="/Sofa7" element={<Sofa7 />} />
+          <Route path="/Sofa8" element={<Sofa8 />} />
+          <Route path="/Chair1" element={<Chair1 />} />
+          <Route path="/Chair2" element={<Chair2 />} />
+          <Route path="/Chair3" element={<Chair3 />} />
+          <Route path="/Chair4" element={<Chair4 />} />
+          <Route path="/Chair5" element={<Chair5 />} />
+          <Route path="/Chair6" element={<Chair6 />} />
+          <Route path="/Chair7" element={<Chair7 />} />
+          <Route path="/Chair8" element={<Chair8 />} />
+
+          <Route path="/Study1" element={<Study1 />} />
+          <Route path="/Study2" element={<Study2 />} />
+          <Route path="/Study3" element={<Study3 />} />
+          <Route path="/Study4" element={<Study4 />} />
+          <Route path="/Study5" element={<Study5 />} />
+          <Route path="/Study6" element={<Study6 />} />
+          {/* <Route path="/Study7" element={<Study7 />} />
         <Route path="/Study8" element={<Study8 />} /> */}
-        <Route path="/chair/:id" component={ChairDetail} />
-      </Routes>
+          <Route path="/chair/:id" component={ChairDetail} />
+        </Routes>
       </UserContext.Provider>
     </>
   );
