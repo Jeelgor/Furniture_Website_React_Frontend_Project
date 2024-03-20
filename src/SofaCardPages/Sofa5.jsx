@@ -8,7 +8,7 @@ const Sofa5 = () => {
         <>
             <ProductCard
                 name="Single Attractive Sofa"
-                price={7000}
+                price={77000}
                 description="
                 Introducing the epitome of comfort and style, our luxurious sofa collection seamlessly blends contemporary elegance with unparalleled coziness. Crafted with meticulous attention to detail, each sofa is a testament to both form and function, making it the perfect centerpiece for any modern living space."
                 image={sofa5}

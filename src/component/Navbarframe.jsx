@@ -4,14 +4,14 @@ import { Image, Navbar } from "react-bootstrap";
 import logo from "../assets/logo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faShoppingCart, faUser } from "@fortawesome/free-solid-svg-icons";
-import UserContext from "./UserContext";
+// import UserContext from "./UserContext";
 import axios from "axios";
 
 const Navbarf = () => {
   const [showDropdown, setShowDropdown] = useState(false);
-  const [userEmail, setUserEmail] = useState("");
+  // const [userEmail, setUserEmail] = useState("");
   const navigate = useNavigate();
-  const { user } = useContext(UserContext);
+  // const { user } = useContext(UserContext);
 
   const handleDropdownToggle = () => {
     setShowDropdown(!showDropdown);
@@ -23,12 +23,6 @@ const Navbarf = () => {
     console.log("Logout clicked");
   };
 
-  useEffect(() => {
-    // Assuming user context has user information including email
-    if (user && user.email) {
-      setUserEmail(user.email);
-    }
-  }, [user]);
   
 
   return (
@@ -65,7 +59,7 @@ const Navbarf = () => {
           </div>
           {showDropdown && (
             <div className="absolute right-0 mt-2 bg-white border rounded-md shadow-md p-2">
-              <p className="mb-2 text-gray-600">{userEmail}</p>
+              <p className="mb-2 text-gray-600">User</p>
               <button onClick={handleLogout} className="bg-blue-500 text-white px-3 py-1 rounded-md hover:bg-blue-600">
                 Logout
               </button>

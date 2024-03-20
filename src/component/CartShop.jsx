@@ -17,31 +17,13 @@ const CartPage = () => {
   const removeItem = (index) => {
     removeFromCart(index);
   };
-  // const handleCheckOut = async (e) => {
-  //   try {
-  //     e.preventDefault();
 
-  //     // Assuming you want to get the last item in the cart
-  //     const lastCartItem = cart[cart.length - 1];
-
-  //     await axios.post('http://localhost:3011/checkout', {
-  //       name: lastCartItem.name,
-  //       price: lastCartItem.price,
-  //       quantity: lastCartItem.quantity,
-  //       imgpath: lastCartItem.image, // Assuming 'image' is the property in your cart item containing the image path
-  //     });
-
-  //     localStorage.clear();
-  //   } catch (error) {
-  //     console.error('Error during checkout:', error);
-  //   }
-  // };
 
   const handleCheckOut = async (e) => {
     try {
       e.preventDefault();
 
-      // Assuming you want to get the last item in the cart
+      // Store Cart Data 
       const lastCartItem = cart[cart.length - 1];
 
       axios.post('http://localhost:3011/checkout', {

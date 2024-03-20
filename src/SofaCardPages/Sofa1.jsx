@@ -3,7 +3,7 @@ import sofa1 from '../assets/Sofaimg/sofa1.png';
 import React from 'react';
 
 const Sofa1 = () => {
-  
+
   return (
     <>
       <ProductCard

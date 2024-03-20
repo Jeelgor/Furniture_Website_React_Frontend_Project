@@ -49,6 +49,8 @@ const ChairPage = () => {
 export default ChairPage;
 
 
+// Backup Code
+
 // // SofaPage.jsx
 // import React from "react";
 // import Card from "../component/Card";
