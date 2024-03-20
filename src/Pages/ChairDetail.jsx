@@ -7,7 +7,7 @@ import { useParams } from "react-router-dom";
 import ChairDetail from "./ChairDetail"; // Assuming you have a ChairDetail component
 
 const ChairDetailPage = () => {
-  
+
 
 };
 

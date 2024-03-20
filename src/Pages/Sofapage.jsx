@@ -34,7 +34,7 @@ const ChairPage = () => {
                 className="product-image"
               />
               <div className="product-details">
-                <p className="text-2xl text-black font-semibold ">{product.name}</p> {/* Applied font-semibold to make the text bold */}
+                <p className="text-1xl text-black font-semibold ">{product.name}</p> {/* Applied font-semibold to make the text bold */}
                 <p className="text-2xl text-black">Price: {product.price}</p>
               </div>
             </div>

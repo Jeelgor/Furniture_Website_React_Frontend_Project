@@ -12,31 +12,27 @@ const LoginPage = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    // Define the allowed admin credentials
     const allowedAdmins = [
       { email: 'Jeel10@gmail.com', password: 'Jeel@123' },
-      { email: 'Aditya07@gmail.com', password: 'Aditya@123' }
+      { email: 'Aditya07@gmail.com', password: 'Aditya@123' },
+      { email: 'Yash27@gmail.com', password: 'Yash@123' },
     ];
 
-    // Clear previous errors
     setEmailError('');
     setPasswordError('');
 
-    // Email and password validation
     if (!email || !password) {
       setEmailError('Please enter both email and password');
       return;
     }
 
-    // Check if the entered credentials match any allowed admin
+    // Check pass id
     const isAdmin = allowedAdmins.some(admin => admin.email === email && admin.password === password);
 
     if (isAdmin) {
-      // Redirect to Adminnav if admin credentials are valid
       navigate('/Adminnav');
       toast.success("Welcome Admin");
     } else {
-      // Display an error 
       setEmailError('Invalid email or password');
     }
   };

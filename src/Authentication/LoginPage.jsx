@@ -23,42 +23,41 @@ const LoginPage = () => {
     setEmailError('');
     setPasswordError('');
   
+    let hasError = false; // Track if there are any errors
+  
     // Email validation
     if (!email) {
       setEmailError('Please enter your email address');
+      hasError = true;
     } else if (!emailRegex.test(email)) {
       setEmailError('Please enter a valid email address');
+      hasError = true;
     }
   
     // Password strength validation
     if (!password) {
       setPasswordError('Please enter a password');
+      hasError = true;
     } else if (!passwordRegex.test(password)) {
       setPasswordError('Password must be at least 8 characters, contain one uppercase letter, one lowercase letter, and one digit');
+      hasError = true;
     }
   
     // Check if any errors exist
-    if (emailError || passwordError) {
+    if (hasError) {
       return;
     }
   
     // Your axios post request
     axios.post('http://localhost:3011/login', { email, password })
-      .then(response => {
-        const result = response.data;
-  
-        if (result) {
-          // Redirect to HomePage only if login is successful
-          navigate('/HomePage');
-          toast.success("Login Successfully");
-        } else {
-          // Display an error message if login fails
-          setEmailError('Incorrect email or password');
-        }
-      })
-      .catch(err => console.log(err));
+     .then(result => {
+      console.log(result)
+      if(result.data==="Success"){
+        navigate('/HomePage');
+      }
+     })
+     .catch(err=>console.log(err));
   };
-  
   
 
   return (

@@ -1,11 +1,25 @@
 import ProductCard from '../component/ProductCart';
 
 import sofa3 from '../assets/Sofaimg/sofa3.png';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
+// import Sofa4 from './Sofa4';
+
 
 const Sofa3 = () => {
+    // const [Sofa3,setSofa3] = useState();
+    // useEffect(()=>{
+    //     axios.get('http://localhost/3011/Sofas')
+    //     .then((response)=>setSofa3(response.data))
+    //     .catch((err)=>console.log(err));
+    // },[]);
     return (
         <>
+            {/* {
+            Sofa3.map((Sofa3, index) => (
+                <ProductCard name={Sofa3.name} price={Sofa3.price} description={Sofa3.description}/>
+            ))
+            
+        } */}
             <ProductCard
                 name="Sofa"
                 price={30000}

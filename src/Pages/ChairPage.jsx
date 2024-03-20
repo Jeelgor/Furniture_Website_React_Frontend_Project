@@ -34,8 +34,8 @@ const ChairPage = () => {
                 className="product-image"
               />
               <div className="product-details">
-                <p className="text-1xl font-semibold">{product.name}</p>
-                <p className="text-2xl">Price: {product.price}</p>
+                <p className="text-1xl font-semibold text-black">{product.name}</p>
+                <p className="text-2xl text-black">Price: {product.price}</p>
               </div>
             </Link>
           </div>
